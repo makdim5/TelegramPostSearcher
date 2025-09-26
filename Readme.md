@@ -14,6 +14,8 @@ This application integrates Telegram automation with a KivyMD-based GUI.
     - [Pyperclip](https://github.com/asweigart/pyperclip)
 
     ```bash
+    python -m venv venv
+    venv\Scripts\activate.bat
     pip install telethon pyperclip
     pip install git+https://github.com/kivymd/KivyMD.git@master
     ```
