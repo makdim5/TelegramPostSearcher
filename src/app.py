@@ -91,7 +91,7 @@ class PostsApp(MDApp):
         text_control.text = text_item
 
     def build(self):
-        return Builder.load_file("ui.kv")
+        return Builder.load_file("src/ui.kv")
 
     def on_select_day(self, instance_date_picker):
         instance_date_picker.dismiss()
@@ -106,7 +106,7 @@ class PostsApp(MDApp):
 
     def open_instruction(self):
         utils.show_snack_bar("Открываем файл с инструкцией ...")
-        os.system("open_doc.vbs")
+        utils.open_instruction()
 
     def search(self):
         if self.root.ids.source_text_field.text not in self.sources:

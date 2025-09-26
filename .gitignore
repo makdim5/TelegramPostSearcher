@@ -1,5 +1,5 @@
 venv/
 cache.json
 my_session.session
-run_template.vbs
+*.vbs
 __pycache__/

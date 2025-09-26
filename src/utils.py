@@ -278,6 +278,24 @@ def export_post_to_ms_word(posts: list[TelegramPost]):
     os.system("run_template.vbs")
 
 
+def open_instruction():
+    script = "\n".join(
+        [
+            'Set wdApp = CreateObject("Word.Application")',
+            "wdApp.Visible = True",
+            'Set fso = CreateObject("Scripting.FileSystemObject")',
+            "scriptPath = fso.GetParentFolderName(WScript.ScriptFullName)",
+            'docPath = scriptPath & "\\" & "assets\\msword_templates\\instruction.docx"',
+            "Set wdDoc = wdApp.Documents.Open(docPath)",
+        ]
+    )
+
+    with open("open_doc.vbs", mode="w", encoding="utf-16") as f:
+        f.write(script)
+
+    os.system("open_doc.vbs")
+
+
 def search_posts_with_links(
     creds: TelegramCredentials, channel_name: str, keywords: list[str], start_date: date
 ):
