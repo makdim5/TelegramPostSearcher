@@ -1,9 +1,9 @@
 # Telegram Post Searcher App
 
 [![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://docs.python.org/3/whatsnew/3.11.html)
-![Windows](https://img.shields.io/badge/platform-windows--64-11.svg?logo=windows&logoColor=white)
-![Telegram API](https://img.shields.io/badge/API-Telegram-blue?logo=telegram&logoColor=white)
-![MS Word](https://img.shields.io/badge/editor-Word-0078D4?logo=microsoftword&logoColor=white)
+[![Windows](https://img.shields.io/badge/platform-windows--64-11.svg?logo=windows&logoColor=white)](https://rdxhtmlexperienceblob.z20.web.core.windows.net/holiday-2022/staging/modern-life/#/welcome)
+[![Telegram API](https://img.shields.io/badge/API-Telegram-blue?logo=telegram&logoColor=white)](https://core.telegram.org/)
+[![MS Word](https://img.shields.io/badge/editor-Word-0078D4?logo=microsoftword&logoColor=white)](https://www.microsoft.com/en-us/microsoft-365/word)
 
 This application integrates Telegram automation with a KivyMD-based GUI.
 
