@@ -1,6 +1,6 @@
 from datetime import date
 import json
-import utils
+import src.utils as utils
 
 
 with open("cache.json") as f:

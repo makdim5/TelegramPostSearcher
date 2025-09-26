@@ -1,12 +1,17 @@
 # Telegram Post Searcher App
 
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://docs.python.org/3/whatsnew/3.11.html)
+![Windows](https://img.shields.io/badge/platform-windows--64-11.svg?logo=windows&logoColor=white)
+![Telegram API](https://img.shields.io/badge/API-Telegram-blue?logo=telegram&logoColor=white)
+![MS Word](https://img.shields.io/badge/editor-Word-0078D4?logo=microsoftword&logoColor=white)
+
 This application integrates Telegram automation with a KivyMD-based GUI.
 
 ![Screenshot](assets/screenshots/image.png)
 
 ## Installation
 
-1. **Install Python for Windows and clone the repository.**
+1. **Install [Python](https://www.python.org/downloads/), [Git](https://git-scm.com/downloads) for Windows and clone the repository.**
 
 2. **Install dependencies:**
     - [Telethon](https://github.com/LonamiWebs/Telethon)
@@ -20,7 +25,7 @@ This application integrates Telegram automation with a KivyMD-based GUI.
     pip install git+https://github.com/kivymd/KivyMD.git@master
     ```
 
-3. **Install Microsoft Office**  
+3. **Install [Microsoft Office](https://www.microsoft.com/en/microsoft-365?market=af).**  
     Ensure Microsoft Office is installed on your system.
 
 ## Getting Started

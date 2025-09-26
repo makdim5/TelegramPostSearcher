@@ -264,7 +264,7 @@ def export_post_to_ms_word(posts: list[TelegramPost]):
                 for item in [
                     str(post.date.date()),
                     post.uri,
-                    post.text.replace("\n", " "),
+                    post.text.replace("\n", " ").replace("\"", "").replace("\'", ""),
                 ]
             ]
         )[:-2]
