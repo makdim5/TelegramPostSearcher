@@ -6,7 +6,7 @@ from kivymd.app import MDApp
 from kivymd.uix.menu import MDDropdownMenu
 from kivymd.uix.pickers import MDModalDatePicker
 
-import utils
+import src.utils as utils
 
 
 class PostsApp(MDApp):
@@ -140,7 +140,3 @@ class PostsApp(MDApp):
     def post_export_to_word(self):
         utils.show_snack_bar("Экспорт постов в MS Word начался ...")
         utils.export_post_to_ms_word(self.posts)
-
-
-if __name__ == "__main__":
-    PostsApp().run()

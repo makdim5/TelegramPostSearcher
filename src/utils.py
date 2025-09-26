@@ -251,7 +251,7 @@ def export_post_to_ms_word(posts: list[TelegramPost]):
             "wdApp.Visible = True",
             'Set fso = CreateObject("Scripting.FileSystemObject")',
             "scriptPath = fso.GetParentFolderName(WScript.ScriptFullName)",
-            'docPath = scriptPath & "\\" & "template.docx"',
+            'docPath = scriptPath & "\\" & "assets\\msword_templates\\template.docx"',
             "Set wdDoc = wdApp.Documents.Open(docPath)",
             "Set tbl = wdDoc.Tables(1)",
         ]
