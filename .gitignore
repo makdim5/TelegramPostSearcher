@@ -1,0 +1,5 @@
+venv/
+cache.json
+my_session.session
+run_template.vbs
+__pycache__/

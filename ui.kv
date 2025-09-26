@@ -1,0 +1,118 @@
+MDScreen:
+    md_bg_color: self.theme_cls.secondaryContainerColor
+    
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDTopAppBar:
+            type: "small"
+            size_hint_y: .1
+
+            MDTopAppBarTitle:
+                text: "Поиск постов"
+
+            MDTopAppBarTrailingButtonContainer:
+
+                MDActionTopAppBarButton:
+                    icon: "google-nearby"
+                    on_release: app.on_settings_btn_click()
+
+                MDActionTopAppBarButton:
+                    icon: "export-variant"
+                    on_release: app.post_export_to_word()
+
+                MDActionTopAppBarButton:
+                    icon: "help-box"
+                    on_release: app.open_instruction()
+
+        
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: "10dp"
+            spacing: "10dp"
+
+            MDCard:
+                padding: "10dp"
+                spacing: "10dp"
+                elevation: 4
+                radius: "12dp"
+                style: "outlined"
+                size_hint_y: None
+                height: "80dp"
+                
+
+                MDTextField:
+                    mode: "outlined"
+                    id: source_text_field
+                    size_hint_x: 0.3
+                    MDTextFieldHintText:
+                        text: "Канал"
+
+                MDIconButton:
+                    icon: "arrow-down-bold"
+                    id: source_selector
+                    style: "filled"
+                    on_release: app.source_selector.open()
+
+                MDTextField:
+                    mode: "outlined"
+                    id: key_words_text_field
+                    MDTextFieldHintText:
+                        text: "Ключевые слова"
+
+                MDIconButton:
+                    icon: "arrow-down-bold"
+                    id: key_words_selector
+                    style: "filled"
+                    on_release: app.key_words_selector.open()
+
+                MDButton:
+                    on_release: app.show_modal_date_picker()
+                    style: "outlined"
+                    size_hint_y: None
+                    height: "50dp"
+
+                    MDButtonText:
+                        id: date_btn_label
+                        text: "Выберите дату"
+
+                MDButton:
+                    style: "filled"
+                    size_hint_y: None
+                    height: "50dp"
+                    on_release: app.search()
+
+                    MDButtonIcon:
+                        icon: "find-replace"
+
+                    MDButtonText:
+                        text: "Поиск"
+
+            
+            MDBoxLayout:
+                padding: "10dp"
+                spacing: "10dp"
+
+                MDCard:
+                    orientation: "vertical"
+                    padding: "10dp"
+                    spacing: "10dp"
+                    elevation: 4
+                    radius: "12dp"
+                    style: "outlined"
+                    id: posts_container
+
+                    FitImage:
+                        id: not_found_img
+                        source: "not_found.jpg"
+                        radius: "12dp"
+                        allow_stretch: True
+
+                    MDButton:
+                        id: not_found_btn
+                        style: "outlined"
+                        pos_hint: {"center_x": .5, "center_y": .5}
+
+                        MDButtonText:
+                            text: "Посты не найдены"
+                    
